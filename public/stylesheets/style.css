@@ -1,0 +1,19 @@
+body {
+	background: url(/images/background_straws.png) repeat 0 0;
+}
+
+a {
+  color: #0099BB;
+  text-decoration: none;
+}
+
+#side-nav {
+	position: absolute;
+	width: 157px;
+	background-color: #222;
+	height: 100%;
+}
+
+#content {
+	padding-left: 157px;
+}

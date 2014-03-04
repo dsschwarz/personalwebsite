@@ -1,0 +1,116 @@
+.resume {
+	padding-left: 100px;
+}
+.descriptor {
+	color: #aaa;
+	text-align: right;
+}
+
+.main-col {
+vertical-align:top;
+width:400px;
+padding:7.2pt;
+}
+
+#side-bar {
+vertical-align:top;
+width:180px;
+background-color: #ddd;
+padding:7.2pt;
+}
+
+#awards .descriptor {
+	float: right;
+}
+.styled-list {
+list-style-type:disc;
+margin:0;
+padding:0;
+}
+
+.no-padding {
+line-height:1.0;
+padding-top:0;
+padding-bottom:0;
+}
+
+.heading {
+color:#a61c00;
+font-weight:700;
+}
+
+.indented {
+padding-left:0;
+margin-left:36pt;
+}
+
+.font8 {
+font-size:8pt;
+}
+
+.c8 {
+line-height:1.0;
+}
+
+.fixed-height {
+height:10pt;
+}
+
+.heavy {
+font-weight:700;
+}
+
+.title {
+padding-top:0;
+line-height:1.15;
+text-align:left;
+color:#000 !important;
+font-size:24pt;
+font-family:Arial;
+font-weight:700;
+padding-bottom:0;
+}
+
+.subtitle {
+padding-top:0;
+line-height:1.15;
+text-align:left;
+color:#a61c00 !important;
+font-size:11pt;
+font-family:Arial;
+font-weight:700;
+padding-bottom:0;
+}
+
+.resume li, .main-text {
+color:#666;
+font-size:9pt;
+font-family:Arial;
+}
+
+.resume p {
+color:#666;
+font-size:9pt;
+font-family:Arial;
+margin:0;
+}
+
+.resume h1 {
+padding-top:0;
+line-height:1.0;
+text-align:left;
+color:#000;
+font-size:10pt;
+font-family:Arial;
+font-weight:700;
+padding-bottom:0;
+}
+
+.resume h2 {
+line-height:1.15;
+text-align:left;
+color:#666;
+font-size:9pt;
+font-family:Arial;
+padding-bottom:4pt;
+}

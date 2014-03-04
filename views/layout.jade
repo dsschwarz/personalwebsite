@@ -1,0 +1,15 @@
+mixin link(href, name)
+	a(class!=attributes.class, href=href)= name
+
+doctype html
+html
+	head
+		link(rel="stylesheet", href="/stylesheets/style.css")
+		block head
+	body
+		#side-nav
+			ul
+			- each link in [{href: "resume", name: "Resume"}]
+					+link(link.href, link.name)
+		#content
+			block content
