@@ -1,15 +1,18 @@
 mixin link(href, name)
-	a(class!=attributes.class, href=href)= name
+	li
+		a(class!=attributes.class, href=href)= name
 
 doctype html
 html
 	head
+		script(src="http://code.jquery.com/jquery-1.11.0.min.js")
+		script(src="/javascripts/layout.js")
 		link(rel="stylesheet", href="/stylesheets/style.css")
 		block head
 	body
 		#side-nav
 			ul
-			- each link in [{href: "resume", name: "Resume"}]
-					+link(link.href, link.name)
+				- each link in [{href: "/", name: "Home"}, {href: "/resume", name: "Resume"}, {href: "/cuboid", name: "Cuboid Connect"}]
+						+link(link.href, link.name)
 		#content
 			block content

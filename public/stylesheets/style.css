@@ -1,19 +1,67 @@
 body {
-	background: url(/images/background_straws.png) repeat 0 0;
+	margin: 0px;
+	background-color: #eeeeee;
 }
 
 a {
-  color: #0099BB;
+  color: #069;
   text-decoration: none;
 }
 
 #side-nav {
 	position: absolute;
-	width: 157px;
-	background-color: #222;
-	height: 100%;
+	width: 207px;
+    background-color: #54a7cf;
+	top: 0px;
+}
+#side-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    width: auto;
+    height: auto;
+}
+
+#side-nav li a {
+	text-shadow: 0px 1px 0px rgba(200,200,255,.5);
+	color: #111;
+	width: 100%;
+	height: 1.75em;
+	line-height: 1.75em;
+	text-indent: 1.5em;
+	font-size: 1.25em;
+	display: block;
+	position: relative;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-color: #3497bf;
+    border-width: 1px;
+    border-bottom-style: solid;
+	-webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.15);
+	box-shadow: inset 0 1px rgba(255, 255, 255, 0.15);
+}
+#side-nav li > a:hover {
+    background-color: #64b7df;
+}
+#side-nav li > a.active {
+	/* Set to white, with dark borders top and bottom */
+	background-color: #eeeeee;
+	border-radius: 0px;
+	border-style: solid none solid none;
+
 }
 
 #content {
-	padding-left: 157px;
+	margin-left: 207px;
+	padding: 50px;
+}
+
+.project-info {
+	float:left;
+	width: 50%;
+	min-width: 300px;
+}
+
+.demo {
+	float:left;
+	margin-right: 50px;
 }
