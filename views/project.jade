@@ -1,8 +1,13 @@
 extends layout
 
+block head
+	title
+		block projectName
+
 block content
 	div.pageName
-		block projectName
+		h1
+			block projectName
 	div.main
 		div.demo
 			block demo
