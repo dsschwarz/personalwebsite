@@ -10,3 +10,7 @@ exports.resume = function(req, res){
 exports.cuboid = function(req, res){
   res.render("cuboid");
 };
+
+exports.orbital = function(req, res){
+  res.render("orbital");
+};
