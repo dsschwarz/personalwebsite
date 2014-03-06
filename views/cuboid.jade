@@ -1,7 +1,7 @@
 extends project
 
 block demo
-	applet(code="TicTacToe3D" archive="/resources/cuboid.jar")
+	applet(code="TicTacToe3D" archive="/resources/cuboid.jar" width="450" height="400")
 		| Java did not load
 
 
@@ -9,9 +9,6 @@ block projectName
 	| Cuboid
 
 block description
-	p
-		strong TODO:
-		| Convert to Applet 
 	p.
 		This is a 3D version of TicTacToe/ConnectFour. Each turn, rotate the cube, then drop a piece in.
 		Once placed, a piece will no longer move around within the cube. Get three in a row to win (no diagonals). <br>

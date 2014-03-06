@@ -59,8 +59,18 @@ a {
 
 
 .project-info {
-	float:right;
-	min-width: 300px;
+	margin-left: 450px;
+	min-width: 400px;
+	max-width: 600px;
+}
+
+@media (max-width: 1100px) {
+	.project-info {
+		margin-left: 0px;
+		float:left;
+		width: 80%;
+	}
+
 }
 
 .demo {
