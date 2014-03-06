@@ -52,6 +52,7 @@ a {
 }
 
 #content {
+	font-family: "HelveticaNeu Light";
 	margin-left: 207px;
 	border-top: solid 5px #54a7cf;
 }
@@ -86,4 +87,9 @@ a {
 
 #content .main {
 	margin: 30px;
+}
+
+.about {
+	width: 50%;
+	font-size: 13pt;
 }
