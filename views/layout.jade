@@ -5,14 +5,14 @@ mixin link(href, name)
 doctype html
 html
 	head
-		script(src="http://code.jquery.com/jquery-1.11.0.min.js")
+		script(src="/javascripts/jquery.min.js")
 		script(src="/javascripts/layout.js")
 		link(rel="stylesheet", href="/stylesheets/style.css")
 		block head
 	body
 		#side-nav
 			ul
-				- each link in [{href: "/", name: "Home"}, {href: "/resume", name: "Resume"}, {href: "/cuboid", name: "Cuboid Connect"}, {href: "/orbital", name: "Physics Sim"}]
+				- each link in [{href: "/", name: "Home"}, {href: "/resume", name: "Resume"}, {href: "/orbital", name: "Physics Sim"}, {href: "/cuboid", name: "Cuboid Connect"}]
 						+link(link.href, link.name)
 		#content
 			block content

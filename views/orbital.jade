@@ -1,5 +1,38 @@
 extends project
 
 block demo
-	div.bordered
+	div.bordered.noScroll
 		include Main.html
+
+block projectName
+	h1 Physics Simulator (n-dimensions)
+
+block description
+	p.
+		This simulator was designed to help give an idea of how n spacial dimensions would function.
+		Understanding this leads to a better understanding of spacial dimensions in general.
+		It simulates gravity, and elastic, inelastic, and perfectly inelastic collisions.
+		Time can be reversed, letting the simulation run backwards. &Delta;t can be treated the same as any other variable; equations continue to work, even if it is negative.
+
+	h3 Using the Simulator
+	
+	p.
+		Click and drag to pan around. Scroll to zoom. The buttons at the bottom allow manipulation of time itself.
+		Hold control and click to place and object. Drag to give velocity, then release. <br>
+		The red line shows object velocity, and the green acceleration.
+
+	p.
+		The objects panel gives you info on each object.
+		From here, you can remove and place them; change mass and radius; and view their position, velocity, and acceleration vectors.
+		Once you pause the simulator (SPACE), you can edit position and velocity in the table by clicking on each entry.
+		Numerical input is required, but it supports scientific notation (2.4E2 = 2.4 x 10^2)
+
+	p.
+		The simulation panel is the central point for controlling the simulation. <br>
+		Enter any number to simulate n spacial dimensions. Simulator runs in one time dimension, although n time dimensions would be an interesting avenue to consider.
+		<br>
+		The first slider controls simulation speed (sim time to real time). Be careful with high simulation speeds: the accuracy of the model will decrease dramatically.
+		The next slider controls zoom, centered in the top left.<br>
+		Collisions are enabled by default. Sticky collisions mean objects will stick together after colliding.
+		Otherwise, they'll rebound, conserving a fraction of their original kinetic energy (set to ratio to 1 for fully elastic collisions).
+		Conservation of momentum and energy is preserved exactly (energy lost is assumed to have been converted to heat).
