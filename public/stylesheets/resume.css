@@ -1,5 +1,6 @@
 .resume {
-	width: 770px;
+	width:1000px;
+	font-size: 14pt;
 	background: url(/images/background_straws.png) repeat 0 0;
 }
 
@@ -8,8 +9,8 @@
 	padding-top:0;
 	line-height:1.0;
 	text-align:left;
-	color:#000;
-	font-size:10pt;
+	color:#222;
+	font-size:18pt;
 	font-family:Arial;
 	font-weight:700;
 	padding-bottom:0;
@@ -18,14 +19,14 @@
 .resume h2 {
 	line-height:1.15;
 	text-align:left;
-	color:#666;
-	font-size:9pt;
+	color:#555;
+	font-size: 16pt;
 	font-family:Arial;
 	padding-bottom:4pt;
 }
 
 .descriptor {
-	color: #aaa;
+	color: #777;
 	text-align: right;
 	display: block;
 }
@@ -38,14 +39,10 @@
 
 #side-bar {
 	vertical-align:top;
-	width:220px;
+	width:400px;
 	height: 100%;
-	background-color: #ddd;
-	padding:7.2pt;
-}
-
-#awards .descriptor {
-	float: right;
+	background-color: #dde;
+	padding:10px;
 }
 .styled-list {
 	list-style-type:disc;
@@ -69,10 +66,6 @@
 	margin-left:36pt;
 }
 
-.font8 {
-	font-size:8pt;
-}
-
 .c8 {
 	line-height:1.0;
 }
@@ -86,37 +79,45 @@
 }
 
 .resume .title {
-	padding-top:0;
+	padding-top:10px;
+	padding-left:10px;
 	line-height:1.15;
 	text-align:left;
 	color:#000;
-	font-size:16pt;
+	font-size:40pt;
 	font-family:Arial;
 	font-weight:700;
-	padding-bottom:0;
 }
 
 .resume p {
 	color:#666;
-	font-size:9pt;
 	font-family:Arial;
 	margin:0;
 }
 
-
-.subtitle {
+.resume .sectionHeader {
 	padding-top:0;
 	line-height:1.15;
 	text-align:left;
-	color:#a61c00 !important;
-	font-size:11pt;
+	color:#226;
+	font-size:22pt;
 	font-family:Arial;
 	font-weight:700;
 	padding-bottom:0;
 }
 
+.resume .sideTitle {
+	width: 300px !important; // Side bar is 400px
+	float: left;
+}
+
+.awards .descriptor {
+	float: right;
+	font-size: 16pt;
+}
+
+
 .resume li, .main-text {
 	color:#666;
-	font-size:9pt;
 	font-family:Arial;
 }
